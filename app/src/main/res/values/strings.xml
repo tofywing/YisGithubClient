@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Yi\'s GitClient</string>
+    <string name="test_error">TEST ERROR</string>
+    <string name="btn_search">SEARCH</string>
+    <string name="hint_user_name">Plesse input your user name.</string>
+    <string name="hint_password">Plesse input your password.</string>
+</resources>

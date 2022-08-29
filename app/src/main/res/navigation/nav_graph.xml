@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/loginPageFragment">
+
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.peter.android.yisgitclient.fragment.LoginPageFragment"
+        android:label="LoginPageFragment" >
+        <action
+            android:id="@+id/action_loginPageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_errorPageFragment"
+            app:destination="@id/errorPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.peter.android.yisgitclient.fragment.HomePageFragment"
+        android:label="HomePageFragment" >
+        <action
+            android:id="@+id/action_homePageFragment_to_searchPageFragment"
+            app:destination="@id/searchPageFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_errorPageFragment"
+            app:destination="@id/errorPageFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_searchPageFragment2"
+            app:destination="@id/searchPageFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_profilePageFragment"
+            app:destination="@id/profilePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchPageFragment"
+        android:name="com.peter.android.yisgitclient.fragment.SearchPageFragment"
+        android:label="SearchPageFragment" >
+        <action
+            android:id="@+id/action_searchPageFragment_to_profilePageFragment"
+            app:destination="@id/profilePageFragment" />
+        <action
+            android:id="@+id/action_searchPageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.peter.android.yisgitclient.fragment.ProfilePageFragment"
+        android:label="ProfilePageFragment" >
+        <action
+            android:id="@+id/action_profilePageFragment_to_searchPageFragment"
+            app:destination="@id/searchPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorPageFragment"
+        android:name="com.peter.android.yisgitclient.fragment.ErrorPageFragment"
+        android:label="ErrorPageFragment" >
+        <action
+            android:id="@+id/action_errorPageFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+        <action
+            android:id="@+id/action_errorPageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_errorPageFragment_to_searchPageFragment"
+            app:destination="@id/searchPageFragment" />
+        <action
+            android:id="@+id/action_errorPageFragment_to_profilePageFragment"
+            app:destination="@id/profilePageFragment" />
+    </fragment>
+</navigation>
